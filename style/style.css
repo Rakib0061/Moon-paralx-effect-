@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+.preloader {
+  background: #000;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.preloader .big_circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: rgba(125, 175, 78, 0.8117647059);
+  border-radius: 100%;
+  position: relative;
+}
+.preloader .big_circle p {
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  font-size: 22px;
+  font-weight: 700;
+  color: #000;
+  transform-origin: 0 150px;
+  animation: rotation 7s infinite linear;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.preloader .big_circle p span {
+  position: absolute;
+  transform-origin: 0 150px;
+  background: linear-gradient(to right, #ff9800 40%, #dcefff 60%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.preloader .big_circle .small_circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.preloader .big_circle .small_circle img {
+  width: 230px;
+  height: 230px;
+  border-radius: 100%;
+}
+
+.one .navbar {
+  background: #d4b610;
+}
+.one .navbar .navbar-brand img {
+  width: 90px;
+}/*# sourceMappingURL=style.css.map */

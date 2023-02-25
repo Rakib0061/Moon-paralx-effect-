@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "./variable";
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@  all  @@@@@@@@@@@@@@@@@@@@@@@@@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $family;
+    box-sizing: border-box;
+}
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@  all  @@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@  preloader  @@@@@@@@@@@@@@@@@@@@@@@@@
+
+.preloader {
+    background: $load-bg;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .big_circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        background: $circle-bg;
+        border-radius: 100%;
+        position: relative;
+
+        p {
+            position: absolute;
+            top: 4px;
+            left: 50%;
+            font-size: $load-size-p;
+            font-weight: $load-weight-p;
+            color: $load-bg;
+            transform-origin: 0 150px;
+            animation: rotation 7s infinite linear;
+
+            @keyframes rotation {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            span {
+                position: absolute;
+                transform-origin: 0 150px;
+                background: linear-gradient(to right, #ff9800 40%, #dcefff 60%);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+
+        }
+
+        .small_circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                width: 230px;
+                height: 230px;
+                border-radius: 100%;
+            }
+        }
+
+    }
+
+}
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@  preloader  @@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@  Header section  @@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+.one {
+    .navbar {
+        background: #d4b610;
+        
+        .navbar-brand img {
+            width: 90px;
+        }
+    }
+
+}
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@  Header section  @@@@@@@@@@@@@@@@@@@@@@@@@
