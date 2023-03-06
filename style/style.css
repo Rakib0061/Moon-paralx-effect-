@@ -1,9 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
-  margin: 0;
-  padding: 0;
   font-family: "Montserrat", sans-serif;
-  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #7597de;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2b1055;
+  background-clip: content-box;
+  border-radius: 33px;
+  border: 2px solid transparent;
 }
 
 .preloader {
@@ -29,7 +42,7 @@
   left: 50%;
   font-size: 22px;
   font-weight: 700;
-  color: #000;
+  color: linear-gradient(to right, #ff9800 40%, #dcefff 60%);
   transform-origin: 0 150px;
   animation: rotation 7s infinite linear;
 }
@@ -59,9 +72,201 @@
   border-radius: 100%;
 }
 
+.one {
+  height: 100vh;
+}
+.one .sticky {
+  position: fixed;
+  width: 100%;
+  background-color: #2b1055 !important;
+  background-image: none !important;
+  z-index: 10;
+}
 .one .navbar {
-  background: #d4b610;
+  background: #2b1055;
+  background-image: url(../Photos/stars.png);
+  background-size: contain;
+}
+.one .navbar .navbar-brand {
+  margin: 0;
 }
 .one .navbar .navbar-brand img {
   width: 90px;
+}
+.one .navbar .nav-item {
+  padding: 0 0 0 25px;
+}
+.one .navbar .nav-item .nav-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+}
+.one .navbar .nav-item .nav-link::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  height: 2px;
+  bottom: 0;
+  background-color: #fff;
+  transition: width 0.3s cubic-bezier(0.4, 0, 1, 1);
+}
+.one .navbar .nav-item .nav-link::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  right: 0;
+  height: 2px;
+  bottom: 0;
+  background-color: #fff;
+  transition: width 0.3s cubic-bezier(0.4, 0, 1, 1);
+}
+.one .navbar .nav-item .nav-link:hover.nav-link::after {
+  width: 46%;
+}
+.one .navbar .nav-item .nav-link:hover.nav-link::before {
+  width: 46%;
+}
+.one .navbar .nav-item .label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  position: relative;
+  border-radius: 15px;
+  height: 42px;
+  width: 19px;
+  cursor: pointer;
+}
+.one .navbar .nav-item .label input {
+  position: absolute;
+  opacity: 0;
+}
+.one .navbar .nav-item .label input:checked ~ .label {
+  background-color: #2b1055 !important;
+}
+.one .navbar .nav-item .label input:focus {
+  outline: none;
+}
+.one .navbar .nav-item .label::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: #000;
+  top: 2px;
+}
+.one .navbar .nav-item .label i {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.631372549);
+}
+.one .navbar .nav-item .label #sun {
+  color: #ff9800 !important;
+}
+.one .main_effect {
+  position: relative;
+  background: linear-gradient(#2b1055, #7597de);
+  min-height: 100vh;
+  overflow: hidden;
+}
+.one .main_effect .stars {
+  position: absolute;
+}
+.one .main_effect .stars img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: inherit;
+     object-fit: inherit;
+}
+.one .main_effect .moon {
+  position: absolute;
+}
+.one .main_effect .moon img {
+  width: 100%;
+  mix-blend-mode: screen;
+}
+.one .main_effect .mountains_behind {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.one .main_effect .mountains_behind img {
+  width: 100%;
+  height: 100vh;
+}
+.one .main_effect .mountains_front {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.one .main_effect .mountains_front img {
+  width: 100%;
+  height: 100vh;
+}
+
+.two {
+  padding: 70px 0 100px;
+  font-size: 20px;
+}
+.two h1 {
+  font-size: 40px;
+  font-weight: 900;
+  padding: 0 0 35px;
+}
+.two table {
+  width: 100%;
+  text-align: center;
+}
+.two table tr {
+  height: 65px;
+  position: relative;
+}
+.two table tr td {
+  border: 1px dotted #000;
+  border-left: 0;
+}
+.two table tr td p {
+  width: 350px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  padding: 5px;
+  border-radius: 7px;
+  background-color: #e34f26;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  justify-content: space-between;
+  align-items: center;
+}
+.two table tr td p span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.two table tr td p span i {
+  color: aliceblue;
+  font-size: 13px;
+  margin-right: 7px;
+}
+.two table tr td #tab2-h1 {
+  transform: translate(-40%, -50%);
+  background-color: #1572b6;
+}
+.two table tr td #tab3-h1 {
+  transform: translate(-30%, -50%);
+  background-color: #ebd13a;
+}
+.two table tr td #tab4-h1 {
+  transform: translate(-20%, -50%);
+  background: #121011;
+}
+.two table tr td #tab5-h1 {
+  transform: translate(-10%, -50%);
+  background-color: #563d7c;
 }/*# sourceMappingURL=style.css.map */
