@@ -24,7 +24,7 @@ window.addEventListener("load",()=>{
     setTimeout(() => {
         preloader.style.display = "none";
         document.body.style.overflowY = "scroll";
-    }, 1000);
+    }, 100);
 });
 
 // ----------------------------load event----------------------------
@@ -103,9 +103,41 @@ window.addEventListener("scroll",()=>{
 
 
 
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@  CLOCK  @@@@@@@@@@@@@@@@@@@@@@@@@
+
 let clock = document.getElementById("clock");
 
 setInterval(() => {
     let time = new Date().toLocaleTimeString();
     clock.innerHTML = time;
 }, 1000);
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@  CLOCK  @@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@  password btn  @@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+let pass = document.getElementById("pass");
+let hide = document.getElementById("hide");
+let show = document.getElementById("show");
+let pass_btn = document.getElementById("pass_btn");
+
+pass_btn.addEventListener("click",()=>{
+    if(pass.type === "password"){
+        hide.style.display = "none"
+        show.style.display = "block";
+        pass.type = "text";
+    }
+    else if(pass.type === "text"){
+        hide.style.display = "block"
+        show.style.display = "none";
+        pass.type = "password";
+    }
+});
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@  password btn  @@@@@@@@@@@@@@@@@@@@@@@@@

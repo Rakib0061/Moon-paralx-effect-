@@ -11,7 +11,18 @@
 /*@@@@@@@@@@@@@@@ X-Large devices (large desktops, 1200px and up) @@@@@@@@@@@@@@@*/
 @media (max-width: 1199.98px) { 
 
+    .two table tr td {
+        font-size: 18px;
+        font-weight: 400;
+    }
 
+    .three video {
+        height: 300px;
+    }
+
+    .three svg text {
+        font-size: 5em;
+    }
 
  }
 
@@ -22,7 +33,39 @@
 /*@@@@@@@@@@@@@@@ Large devices (desktops, 992px and up) @@@@@@@@@@@@@@@*/
 @media (max-width: 991.98px) { 
 
+    .one .navbar .nav-item .nav-link {
+        font-size: 17px;
+    }
 
+    .one .main_effect {
+        min-height: 600px;
+    }
+
+    .one .main_effect .moon {
+        top: 50px;
+    }
+
+    .one .main_effect .mountains_behind img {
+        height: 600px;
+    }
+
+    .one .main_effect .mountains_front img {
+        height: 600px;
+    }
+
+    .two {
+        padding: 100px 0px 100px;
+    }
+
+    .two h1 {
+        font-size: 36px;
+        padding: 0px 0px 25px;
+    }
+
+    .two table tr td p {
+        width: 300px;
+        font-size: 16px;
+    }
 
  }
 
@@ -32,7 +75,61 @@
 /*@@@@@@@@@@@@@@@ Medium devices (tablets, 768px and up) @@@@@@@@@@@@@@@*/
 @media (max-width: 767.98px) { 
 
+    .one .navbar .nav-item {
+        padding: 0 25px;
+    }
+    
+    nav.navbar.navbar-expand-sm.sticky {
+        padding: 0;
+    }
 
+    .one {
+        height: 526px;
+    }
+
+    .one .main_effect {
+        min-height: 525px;
+    }
+
+    .one .main_effect .stars img {
+        height: 450px;
+        object-fit: cover;
+    }
+
+    .one .main_effect .moon {
+        top: 85px;
+    }
+
+    .one .main_effect .mountains_behind img {
+        height: 600px;
+    }
+
+    .one .main_effect .mountains_front img {
+        height: 415px;
+    }
+
+    .two {
+        padding: 60px 0px 0;
+    }
+
+    .two table tr td p {
+        width: 230px;
+        font-size: 14px;
+    }
+
+    .two table tr td {
+        border: 1px dotted #0000002b;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .two table tr td:nth-child(1) {
+        border-right: 1px dotted #0000002b;
+    }
+
+    .two table tr td:nth-child(9) {
+        border-right: 1px dotted #0000002b;
+    }
 
  }
 
@@ -42,7 +139,25 @@
 /*@@@@@@@@@@@@@@@ Small devices (landscape phones, 576px and up) @@@@@@@@@@@@@@@*/
 @media (max-width: 575.98px) { 
 
+    .one .navbar .nav-item {
+        padding: 0 0 5px;
+    }
 
+    .one .main_effect .moon {
+        top: 60px;
+    }
+
+    .one .main_effect .mountains_behind img {
+        height: 500px;
+    }
+
+    .one .main_effect .mountains_front img {
+        height: 450px;
+    }
+
+    .two h1 {
+        font-size: 32px;
+    }
 
  }
 
