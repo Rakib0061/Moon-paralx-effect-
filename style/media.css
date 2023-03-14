@@ -143,6 +143,19 @@
         padding: 0 0 5px;
     }
 
+    .one .navbar .nav-item .label {
+        flex-direction: row;
+        height: 20px;
+        width: 50px;
+    }
+
+    .one .navbar .nav-item .label::before {
+        position: absolute;
+        width: 16px;
+        height: 15px;
+        left: 2px;
+    }
+
     .one .main_effect .moon {
         top: 60px;
     }
@@ -154,9 +167,52 @@
     .one .main_effect .mountains_front img {
         height: 450px;
     }
-
+    
     .two h1 {
-        font-size: 32px;
+        font-size: 30px;
+    }
+
+    .two table tr td p {
+        width: 200px;
+        /* font-size: 14px; */
+        position: absolute;
+        left: 105px;
+        top: 100%;
+    }
+
+    .three {
+        padding: 80px 0 0;
+    }
+
+    .three video {
+        height: 175px;
+    }
+
+    .three svg {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .three svg text {
+        font-size: 36px;
+    }
+
+    .footer footer .f-div {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .footer footer .f-div label {
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+
+    .footer footer .f-div #submit {
+        width: 150px;
+    }
+
+    .footer footer .f-div {
+        width: 285px;
     }
 
  }

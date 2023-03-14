@@ -17,6 +17,10 @@ motion.innerHTML = motion.innerHTML.split("").map((val,ind)=>
 
 
 
+
+
+
+
 // ----------------------------load event----------------------------
 
 let preloader = document.getElementById("preloader");
