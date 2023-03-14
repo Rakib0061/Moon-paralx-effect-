@@ -84,11 +84,11 @@
     }
 
     .one {
-        height: 526px;
+        height: 100vh;
     }
 
     .one .main_effect {
-        min-height: 525px;
+        min-height: 100vh;
     }
 
     .one .main_effect .stars img {
